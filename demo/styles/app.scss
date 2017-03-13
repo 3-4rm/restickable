@@ -1,0 +1,32 @@
+.main-header{
+  text-align: center;
+  padding: 10px;
+}
+
+.options-table{
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  width: 100%
+}
+
+.options-table td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.options-table td:nth-child(odd) {
+    vertical-align: top;
+}
+
+.options-table td:nth-child(even) {
+    vertical-align: bottom;
+}
+
+.padding-10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-sticky-class .plate-2{
+  background-color: yellow
+}

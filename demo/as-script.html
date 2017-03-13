@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/as-script.css"/>
+  <script src="restickable.js"></script>
+</head>
+<body>
+  <div class="application">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="plate-0">
+            <h2 class="main-header">Demo page for restickable / react-restickable</h2>
+            For use with React.js react-restickable can be used.<br/>
+            The demo is interactive, please use inputs in sticky area below and in footer. Check responsiveness by resizing window.<br/>
+            Notice the value of spacer option and behavior on small screens.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="parent" class="col-md-6 padding-10">
+          <div id="sticky" class="plate-2">
+            this area is sticky
+          </div>
+        </div>
+        <div class="col-md-6 padding-10">
+          <div class="plate-3">
+            regular
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="plate-1">
+            footer
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  var a = document.getElementById('sticky');
+  restickable.stickInParent({}, a);
+</script>
+
+</body>
+</html>
